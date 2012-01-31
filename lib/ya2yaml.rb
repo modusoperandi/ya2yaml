@@ -176,7 +176,8 @@ class Ya2YAML
         ESCAPE_SEQ_LB[$1] + "\\\n" + indent
       }
     end
-    '"' + str + '"'
+    
+    "'" + str + "'"
   end
 
   def emit_base64_binary(str, level)
